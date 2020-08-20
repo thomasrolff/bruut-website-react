@@ -1,0 +1,63 @@
+@import '../../global-styles/colors';
+
+.mailchimp-form {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 44px;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  padding: 0 1rem;
+  text-align: center;
+  input, button {
+    font-family: futura, sans-serif;
+    color: white;
+    border: none;
+    border-bottom: 2px solid white;
+    background: transparent;
+    height: 100%;
+  }
+  input {
+    width: 100%;
+    margin-right: 12px;
+    font-size: 1rem;
+    border-radius: 0px;
+    &::placeholder {
+      color: grey;
+      opacity: 1;
+      font-size: .9rem;
+    }
+    &:focus {
+      outline: none;
+      caret-color: white;
+      color: white;
+      // font-size: 1.2rem;
+    }
+    &:focus::placeholder {
+      color: transparent;
+    }
+  }
+  button {
+    min-width: 80px;
+    border: 2px solid white;
+    color: white;
+    font-size: .9rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all .15s linear;
+    &:hover {
+        cursor: pointer;
+        background-color: white;
+        color: $main-black;
+    }
+  }
+  .msg-alert {
+    position: absolute;
+    top: 54px;
+    left: 1rem;
+    width: 100%;
+    text-align: left;
+  }
+}

@@ -1,0 +1,115 @@
+@import '../../global-styles/margin';
+@import '../../global-styles/buttons';
+
+.shows {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+  background: $background;
+  padding-top: 3rem;
+}
+
+.events-list {
+  width: 100%;
+  max-width: 660px;
+  padding: 0 1rem;
+  font-family: 'Open Sans', futura, sans-serif;
+  font-weight: 600;
+  font-size: .8rem;
+}
+
+.event {
+  display: flex;
+  margin: 1rem 0;
+  height: 54px;
+  line-height: 1.6;
+  .event-date {
+    flex-shrink: 0;
+    width: 60px;
+    text-align: right;
+    text-transform: uppercase;
+    vertical-align: bottom;
+    .day-month {
+      font-weight: 800;
+    }
+  }
+  .event-info {
+    flex-grow: 1;
+    margin: 0 1rem;
+    .other-artists {
+      font-size: .7rem;
+      margin-top: 1.5px;
+    }
+  }
+  .button-tickets {
+    height: fit-content;
+    background: none;
+    border: 1px solid $main-black;
+    color: $main-black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: .6rem .8rem;
+    cursor: pointer;
+    transition: all .15s linear;
+    &:hover {
+      background: $main-black;
+      color: $background;
+    }
+  }
+}
+
+.songkick-logo {
+  width: 100%;
+  text-align: right;
+  img {
+    width: 84px;
+  }
+}
+
+.button {
+  @include button-black;
+  margin-top: 1rem; 
+  margin-bottom: 2rem;
+  width: fit-content;
+}
+
+@media screen and (min-width: 480px) {
+  .event {
+    .event-info {
+      margin-left: 2rem;
+    }
+    .button-tickets {
+      padding: .5rem 1.5rem;
+    }
+  }
+  .songkick-logo img {
+    width: 104px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .shows > h2 {
+    margin-bottom: 2rem;
+  }
+  .events-list {
+    font-size: 1rem;
+    font-weight: 400;
+    .event-date {
+      width: 80px;
+      .day-month {
+        font-weight: 800;
+      }
+    }
+    .event-info {
+      margin-left: 3rem;
+      .venue {
+        // text-transform: uppercase;
+      }
+    }
+    .button-tickets {
+      font-size: .8rem;
+      // font-weight: 800;
+    }
+  }
+}

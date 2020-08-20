@@ -1,0 +1,54 @@
+@import '../../global-styles/colors';
+$socials-grey: #989898;
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: $main-black;
+  color: white;
+  padding: 1rem 1rem;
+  h3 {
+      text-transform: uppercase;
+      font-weight: 100;
+      font-size: .9rem;
+  }
+  .socials-container {
+      margin-top: 1rem;
+      width: 18vw;
+      min-width: 200px;
+      display: flex;
+      justify-content: space-between;
+  }
+  .socials {
+      padding: 10px;
+      svg path {
+          transition: fill .15s linear;
+      }
+      &:hover {
+          svg path {
+              fill: white;
+          }
+      }
+  }
+  .logo-container {
+      margin: .5rem 0;
+  }
+  .copyright {
+    font-family: 'Open Sans', futura, sans-serif;
+    font-size: .85rem;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .socials {
+    svg path {
+      fill: $socials-grey; 
+      transition: fill .15s linear;
+      &:hover {
+        fill: white;
+      }
+    }  
+  }
+}

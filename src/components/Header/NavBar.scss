@@ -1,0 +1,127 @@
+@import '../../global-styles/margin';
+@import '../../global-styles/colors';
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  background: $main-black;
+  height: 40px;
+  // padding: 4px 0;
+  z-index: 2;
+  top: 0;
+  // transition: top .25s cubic-bezier(0.75, 0.25, 0.05, 0.95);
+  // box-shadow: 0px 4px 4px 1px rgba(0,0,0,0.1);
+  .navbar-inner-container {
+    display: flex;
+    max-width: $global-max-width;
+    margin: 0 auto;
+    padding: 0 1rem;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    .logo-container {
+      display: flex;
+      align-items: center;
+      height: 21px;
+      margin-right: 4rem;
+    } 
+    .nav-items {
+      display: flex;
+      list-style: none;
+      align-items: center;
+      justify-self: space-around;
+      padding: 0 1rem;
+      height: 100%;
+      .nav-item {
+        display: flex;
+        align-items: center;
+        margin: 0 .5rem;   
+        height: 100%;     
+        font-family: 'Open Sans', futura, sans-serif;
+        text-decoration: none;
+        font-size: .94rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: white;
+        padding: 0 10px;
+        transition: color 0.15s linear;
+        &:hover {
+          cursor: pointer;
+          background: white;
+          color: black;
+        }
+      }
+    }
+    .socials-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      a { 
+        margin: 0 .8rem;
+        height: 100%;
+        padding: 8px .5rem;
+        svg path {
+          transition: fill 0.15s linear;
+        }
+        &:hover {
+          background: white;
+          svg path {
+            fill: black;
+          }
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+
+.hamburger-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 26px;
+  background: none;
+  // background: red;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  // margin-right: 1rem;
+  .hamburger-button__line {
+    background: white;
+    height: 3px;
+    width: 26px;
+    margin: 2px 0;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .hamburger-button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .navbar {
+    .navbar-inner-container {
+      .nav-items,
+      .socials-container {
+        display: none;
+      }
+    }
+  }  
+}
+
+
+
+
+
+
+

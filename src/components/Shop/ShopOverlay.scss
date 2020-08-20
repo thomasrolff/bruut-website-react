@@ -1,0 +1,240 @@
+.no-scroll {
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+.no-selection {
+    user-select: none;
+}
+
+.overlay-shop {
+  text-align: left;
+  color: white;
+  position: fixed;
+  z-index: 99;
+  height: 100vh;
+  width: 100%; 
+  padding: 1rem;
+  top: 0; 
+  left: 0;
+  background: rgba(0,0,0,.92);
+  user-select: none; 
+  .button-close {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 48px;
+    margin: 1rem;
+    svg path {
+      object-fit: contain;
+      fill: white;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+  }
+}
+
+.left-bar-wrapper {
+  display: none;
+  padding: 8rem 3rem;
+  padding-right: 4rem;
+  svg path {
+    fill: #5a5959;
+    transition: all .2s linear;
+  }
+  &:hover {
+    cursor: pointer;
+    svg path {
+        fill: white;
+    }
+  }
+}
+
+.right-bar-wrapper {
+  display: none;
+  padding: 8rem 3rem;
+  padding-left: 4rem;
+  svg path {
+    fill: #5a5959;
+    transition: all .2s linear;
+  }
+  &:hover {
+    cursor: pointer;
+    svg path {
+        fill: white;
+    }
+  }
+}
+  
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700; 
+    text-transform: capitalize;
+  }
+  .image-container {
+    height: 30%;
+    width: auto;
+    margin-top: 4rem;
+    img {
+      height: 100%;
+      object-fit: contain;
+      box-shadow: 0px 0px 64px 0px rgba(0,0,0,1); 
+    }
+  }
+  .info-container {
+    width: 100%;
+    height: fit-content;
+    max-width: 72vw;
+    h2 {
+      margin-bottom: .5rem;
+    }
+    .musicians {
+      display: none;
+    }
+  }
+  .buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 72vw;
+    margin-top: 2rem;
+    .button-buy,
+    .button-stream {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid white;
+      color: white;
+      width: 100%;
+      min-height: 48px;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-family: futura;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: all .15s linear;
+      svg path {
+        transition: all .15s linear;
+      }
+      &:hover {
+        color: black;
+        background: white;
+        svg path {
+          fill: black;
+        }
+      }
+    }
+    .button-buy .button-title {
+      margin-left: .4rem;
+    }
+    .button-stream {
+      cursor: pointer;
+      margin-top: 8px;
+    }
+    .button-image svg {
+      vertical-align: top;
+    }
+  }
+} 
+
+// Media Queries
+@media screen and (min-width: 480px) {
+  .content-wrapper {
+    .image-container {
+      height: 40%;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .overlay-shop {
+    display: flex;
+    align-items: center;
+  }
+  .content-wrapper {
+    max-width: 80%;
+  }
+  .left-bar-wrapper {
+    display: block;
+    padding: 8rem 0;
+    padding-right: 4rem;
+    padding-left: 1rem;
+  }
+  .right-bar-wrapper {
+    display: block;
+    padding: 8rem 0;
+    padding-right: 1rem;
+    padding-left: 4rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .content-wrapper {
+    flex-direction: row;
+    justify-content: center;
+    .image-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      height: 100%;
+      margin: 0;
+      img {
+        width: 85%;
+      }
+    }
+    .info-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      max-width: 50%;
+      margin-left: 1rem;
+      .musicians {
+        order: 2;
+        display: block;
+      }
+      .produced,
+      .available {
+        order: 3;
+        margin-top: 1rem;
+      }
+      .buttons-container {
+        order: 1;
+        flex-direction: row;
+        margin: 2rem 0;
+        .button-stream,
+        .button-buy {
+          margin: 0;
+          max-width: 200px;
+          min-height: 40px;
+          font-size: 1rem;
+          background: white;
+          color: black;
+          svg path {
+            fill: black;
+          }
+          &:hover {
+            background: transparent;
+            color: white;
+            svg path {
+              fill: white;
+            }
+          }
+        }
+        .button-buy {
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+}

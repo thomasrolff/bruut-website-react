@@ -1,0 +1,48 @@
+@import '../../global-styles/margin';
+@import '../../global-styles/buttons';
+
+.video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding-top: 1rem;
+  // background: $background;
+    iframe {
+      width: 100%;
+      height: contain;
+      max-height: 210px;
+      max-width: 400px;
+    }
+}
+
+.button-load-more {
+  @include button-black;
+  margin-top: 2rem; 
+  margin-bottom: 5rem;
+}
+
+@media screen and (min-width: 480px) {
+  .video-container iframe {
+    margin: .5rem 0;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .video-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    margin: 1rem;
+    width: 100%;
+    max-width: $global-max-width;
+    iframe {
+      width: 100%;
+      max-width: 560px;
+      max-height: 300px;
+      padding: 1rem;
+      margin: 0;
+    }
+  }
+}

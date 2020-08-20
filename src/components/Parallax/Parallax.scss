@@ -1,0 +1,27 @@
+@import '../../global-styles/colors';
+
+.parallax {
+    // image and height
+    background-image: url("/images/parallax-black-overlay.jpg");
+    object-fit: contain;
+    height: 200px; 
+    width: 100%;
+    // parallax effect
+    // background-attachment: fixed;
+    // positioning
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (min-width: 481px) {
+  .parallax {
+    height: 320px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .parallax {
+    height: 80vh;
+  }
+}

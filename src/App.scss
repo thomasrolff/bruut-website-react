@@ -1,0 +1,52 @@
+@import './global-styles/colors';
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+// prevent bouncy scroll
+// html {
+//   height: 100%;
+//   width: 100%;
+//   overflow: hidden; 
+// } 
+
+// html {
+//   overflow-x: hidden;
+// }
+ 
+body {
+  background-color: $main-black;
+  color: $main-black;
+  // overflow-x: hidden;
+  font-family: futura, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  // prevent bouncy scroll 
+  height: 100%;
+  padding: 0;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch; 
+}
+
+main {
+  background-color: $background;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  font-family: "Futura-CondensedExtraBold", Futura, sans-serif;
+  font-size: 2.5rem;
+  font-stretch: condensed;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 769px) {
+  h2 {
+    font-size: 3rem;
+    margin-top: 1rem;
+  }
+} 
