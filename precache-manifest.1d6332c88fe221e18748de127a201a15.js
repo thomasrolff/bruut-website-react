@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5f90840eff85d6136f9cf681a18e192a",
+    "revision": "b981c4edb2e63da7cef56c7575da4b5f",
     "url": "/bruut-website-react/index.html"
   },
   {
-    "revision": "e17e271cae51b8814a69",
-    "url": "/bruut-website-react/static/css/main.0347dec1.chunk.css"
+    "revision": "1047d4df9bf533d1590e",
+    "url": "/bruut-website-react/static/css/main.b4e2f194.chunk.css"
   },
   {
     "revision": "25c1ce44122f9528f882",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bruut-website-react/static/js/2.31dfaf21.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e17e271cae51b8814a69",
-    "url": "/bruut-website-react/static/js/main.ac9ffadb.chunk.js"
+    "revision": "1047d4df9bf533d1590e",
+    "url": "/bruut-website-react/static/js/main.9b8a1979.chunk.js"
   },
   {
     "revision": "e52eed642113c736a4c0",
