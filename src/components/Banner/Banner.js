@@ -6,6 +6,7 @@ import albumCover from '../../images/album-go-surfing-lp.jpg';
 import cdCover from '../../images/album-go-surfing-cd.jpg';
 import lp from '../../images/lp.png';
 import GoSurfingLogo from '../../images/go-surfing.svg';
+import bannerBackground from '../../images/banner-background-dark-L.jpg';
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import './Banner.scss';
@@ -79,7 +80,7 @@ useEffect(() => {
   // });
 
   return (
-    <section className="banner">
+    <section className="banner" style={{background: `url(${bannerBackground})`}}>
       <div className="banner-image">
         <img className="album-cover" src={albumCover} alt="Go Surfing album cover" />
         <img className="lp" id="lp" src={lp} alt="Go Surfing vinyl" />
