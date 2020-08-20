@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/bruut-website-react/precache-manifest.a67e9fe5d9e096b99c2d9afbac54a0f0.js"
+  "/bruut-website-react/precache-manifest.fc51971c654a38438f14cf3a69a24969.js"
 );
 
 self.addEventListener('message', (event) => {

@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/bruut-website-react/static/css/main.2cef6cf1.chunk.css",
-    "main.js": "/bruut-website-react/static/js/main.074e44c1.chunk.js",
-    "main.js.map": "/bruut-website-react/static/js/main.074e44c1.chunk.js.map",
+    "main.css": "/bruut-website-react/static/css/main.0347dec1.chunk.css",
+    "main.js": "/bruut-website-react/static/js/main.ac9ffadb.chunk.js",
+    "main.js.map": "/bruut-website-react/static/js/main.ac9ffadb.chunk.js.map",
     "runtime-main.js": "/bruut-website-react/static/js/runtime-main.2b7f70e9.js",
     "runtime-main.js.map": "/bruut-website-react/static/js/runtime-main.2b7f70e9.js.map",
-    "static/js/2.d037d749.chunk.js": "/bruut-website-react/static/js/2.d037d749.chunk.js",
-    "static/js/2.d037d749.chunk.js.map": "/bruut-website-react/static/js/2.d037d749.chunk.js.map",
+    "static/js/2.31dfaf21.chunk.js": "/bruut-website-react/static/js/2.31dfaf21.chunk.js",
+    "static/js/2.31dfaf21.chunk.js.map": "/bruut-website-react/static/js/2.31dfaf21.chunk.js.map",
     "index.html": "/bruut-website-react/index.html",
-    "precache-manifest.a67e9fe5d9e096b99c2d9afbac54a0f0.js": "/bruut-website-react/precache-manifest.a67e9fe5d9e096b99c2d9afbac54a0f0.js",
+    "precache-manifest.fc51971c654a38438f14cf3a69a24969.js": "/bruut-website-react/precache-manifest.fc51971c654a38438f14cf3a69a24969.js",
     "service-worker.js": "/bruut-website-react/service-worker.js",
-    "static/css/main.2cef6cf1.chunk.css.map": "/bruut-website-react/static/css/main.2cef6cf1.chunk.css.map",
-    "static/js/2.d037d749.chunk.js.LICENSE.txt": "/bruut-website-react/static/js/2.d037d749.chunk.js.LICENSE.txt",
+    "static/css/main.0347dec1.chunk.css.map": "/bruut-website-react/static/css/main.0347dec1.chunk.css.map",
+    "static/js/2.31dfaf21.chunk.js.LICENSE.txt": "/bruut-website-react/static/js/2.31dfaf21.chunk.js.LICENSE.txt",
     "static/media/album-go-surfing-cd.jpg": "/bruut-website-react/static/media/album-go-surfing-cd.1635fd43.jpg",
     "static/media/album-go-surfing-lp.jpg": "/bruut-website-react/static/media/album-go-surfing-lp.a353e682.jpg",
     "static/media/apple.aee05ae9.svg": "/bruut-website-react/static/media/apple.aee05ae9.svg",
     "static/media/arrow-left.9e659798.svg": "/bruut-website-react/static/media/arrow-left.9e659798.svg",
     "static/media/arrow-right.2f7ca965.svg": "/bruut-website-react/static/media/arrow-right.2f7ca965.svg",
+    "static/media/banner-background-dark-L.jpg": "/bruut-website-react/static/media/banner-background-dark-L.14cd2eb6.jpg",
     "static/media/bruut-logo-full-width.ec168950.svg": "/bruut-website-react/static/media/bruut-logo-full-width.ec168950.svg",
     "static/media/bruut-logo-new.0e51f47a.svg": "/bruut-website-react/static/media/bruut-logo-new.0e51f47a.svg",
     "static/media/by-songkick-black.svg": "/bruut-website-react/static/media/by-songkick-black.152349dd.svg",
@@ -25,6 +26,7 @@
     "static/media/go-surfing.svg": "/bruut-website-react/static/media/go-surfing.faffc500.svg",
     "static/media/instagram.7ef06a86.svg": "/bruut-website-react/static/media/instagram.7ef06a86.svg",
     "static/media/lp.png": "/bruut-website-react/static/media/lp.a7a643b8.png",
+    "static/media/parallax-black-overlay.jpg": "/bruut-website-react/static/media/parallax-black-overlay.6b88e708.jpg",
     "static/media/photo-1.jpg": "/bruut-website-react/static/media/photo-1.dfa60cc4.jpg",
     "static/media/photo-2.jpg": "/bruut-website-react/static/media/photo-2.b16055a9.jpg",
     "static/media/photo-3.jpg": "/bruut-website-react/static/media/photo-3.d8d99649.jpg",
@@ -42,8 +44,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.2b7f70e9.js",
-    "static/js/2.d037d749.chunk.js",
-    "static/css/main.2cef6cf1.chunk.css",
-    "static/js/main.074e44c1.chunk.js"
+    "static/js/2.31dfaf21.chunk.js",
+    "static/css/main.0347dec1.chunk.css",
+    "static/js/main.ac9ffadb.chunk.js"
   ]
 }
