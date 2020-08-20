@@ -80,7 +80,14 @@ useEffect(() => {
   // });
 
   return (
-    <section className="banner" style={{background: `url(${bannerBackground})`}}>
+    <section className="banner" style={{
+      background: `url(${bannerBackground})`,
+      objectFit: "fill",
+      backgroundPositionY: "center", 
+      backgroundPositionX: "center", 
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "cover"
+    }}>
       <div className="banner-image">
         <img className="album-cover" src={albumCover} alt="Go Surfing album cover" />
         <img className="lp" id="lp" src={lp} alt="Go Surfing vinyl" />
