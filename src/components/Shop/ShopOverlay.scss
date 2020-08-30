@@ -159,6 +159,7 @@
   .overlay-shop {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
   .content-wrapper {
     max-width: 80%;
@@ -187,6 +188,7 @@
       align-items: center;
       width: 50%;
       height: 100%;
+      max-height: 480px;
       margin: 0;
       img {
         width: 85%;

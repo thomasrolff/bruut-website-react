@@ -1,40 +1,19 @@
 import React, { useState, useEffect, useRef } from 'react';
 import SongKickLogo from '../../images/by-songkick-black.svg';
 import './Shows.scss';
-import { fadeOnScroll } from '../../utils';
+import { fadeOnScroll, scrollToSection } from '../../utils';
 
 
 function Shows() {
   const [artistEvents, setArtistEvents] = useState([]);
   const [eventsVisible, setEventsVisible] = useState(6);
   const [displayError, setDisplayError] = useState(false);
+  const showsRef = useRef(null);
+  
+  useEffect(() => {
+    fadeOnScroll(showsRef.current);
+  }, []);
 
-  const buildAllEvents = (data) => {
-    const allSongkickEvents = data.resultsPage.results.event;
-    setArtistEvents(allSongkickEvents);
-  }
-
-  const handleLoadMore = () => {
-    setEventsVisible(artistEvents.length);
-  }
-
-  const handleViewLess = () => {
-    setEventsVisible(6);
-  }
-
-  const getYear = (date) => {
-    const eventDate = new Date(date);
-    return eventDate.getFullYear();
-  }
-
-  const getDayMonth = (date) => {
-    const months = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'];
-    const eventDate = new Date(date);
-    const day = eventDate.getDate();
-    const month = months[eventDate.getMonth()];
-    return day + ' ' + month;
-  }
- 
   useEffect(() => {
     fetch('https://api.songkick.com/api/3.0/artists/4057396/calendar.json?apikey=42PV2kn4gScjFMcv')
     .then(response => response.json())
@@ -45,18 +24,39 @@ function Shows() {
     });
   }, []);
 
+  const buildAllEvents = (data) => {
+    const allOkSongkickEvents = data.resultsPage.results.event.filter(event => event.status === "ok");
 
-  
-  const showsRef = useRef(null);
-  
-  useEffect(() => {
-    fadeOnScroll(showsRef.current);
-  }, []);
+    setArtistEvents(allOkSongkickEvents);
+  }
+
+  const getYear = (date) => {
+    const eventDate = new Date(date);
+    
+    return eventDate.getFullYear();
+  }
+
+  const getDayMonth = (date) => {
+    const months = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'];
+    const eventDate = new Date(date);
+    const day = eventDate.getDate();
+    const month = months[eventDate.getMonth()];
+    return day + ' ' + month;
+  }
+
+  const handleLoadMore = () => {
+    setEventsVisible(artistEvents.length);
+  }
+
+  const handleViewLess = () => {
+    setEventsVisible(6);
+      scrollToSection("#shows", 40, .2);
+  }
 
 
   return (
   <section ref={showsRef} className="shows" id="shows">
-      <h2  >Upcoming Shows</h2>
+      <h2>Upcoming Shows</h2>
       <div className="events-list">
         {
           artistEvents.slice(0, eventsVisible).map(event => (
@@ -78,7 +78,7 @@ function Shows() {
                   <div className="other-artists">with {event.performance[1].displayName}</div>
                 }
               </div>
-              <a href={event.uri} target="_blank" className="button-tickets">
+              <a href={event.uri} target="_blank" className="button-tickets" rel="noopener noreferrer">
                 <div>Tickets</div>  
               </a>
             </div>

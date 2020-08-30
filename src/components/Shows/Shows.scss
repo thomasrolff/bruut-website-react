@@ -7,6 +7,9 @@
   align-items: center;
   background: $background;
   padding-top: 3rem;
+  h2 {
+    text-align: center;
+  }
 }
 
 .events-list {
@@ -103,9 +106,6 @@
     }
     .event-info {
       margin-left: 3rem;
-      .venue {
-        // text-transform: uppercase;
-      }
     }
     .button-tickets {
       font-size: .8rem;

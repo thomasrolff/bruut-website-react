@@ -1,4 +1,9 @@
 import goSurfingImage from '../images/album-go-surfing-lp.jpg';
+import vImage from '../images/album-v.jpg';
+import superjazzImage from '../images/album-superjazz.jpg';
+import madpackImage from '../images/album-madpack.jpg';
+import fireImage from '../images/album-fire.jpg';
+import bruutImage from '../images/album-bruut.jpg';
 
 const albums = [
   { 
@@ -29,6 +34,7 @@ const albums = [
       ],
       producer: "BRUUT!",
       image: goSurfingImage,
+      imageALT: "Go Surfing albumcover 2019",
       buyURL: "https://www.platomania.nl/album/7207144/go-surfing/bruut-anton-goudsmit",
       spotifyURL: "https://open.spotify.com/album/4JAZLSX5O3Ls78FQF88vqs",
       deezerURL: "https://www.deezer.com/nl/album/156126752",
@@ -65,7 +71,8 @@ const albums = [
         }
       ],
       producer: "BRUUT! & Paul Willemsen",
-      image: "images/album-v.jpg",
+      image: vImage,
+      imageALT: "V albumcover 2018",
       buyURL: "https://bruut.bandcamp.com/album/v",
       spotifyURL: "https://open.spotify.com/album/63IC8S5kciU4LZOtBIOoT8",
       deezerURL: "https://www.deezer.com/nl/album/75396712",
@@ -101,7 +108,8 @@ const albums = [
         }
       ],
       producer: "BRUUT!",
-      image: "images/album-superjazz.jpg",
+      image: superjazzImage,
+      imageALT: "Superjazz albumcover 2017",
       buyURL: "https://bruut.bandcamp.com/album/superjazz",
       spotifyURL: "https://open.spotify.com/album/7xfUhNsWnbCUZql4FCrX21",
       deezerURL: "https://www.deezer.com/nl/album/15260829",
@@ -112,7 +120,7 @@ const albums = [
         "CD",
         "DIGITAL",
       ],
-      info: "2016 | vinyl, cd, digital"
+      info: "2017 | vinyl, cd, digital"
   },
   {
       id: 3,
@@ -137,7 +145,8 @@ const albums = [
         }
       ],
       producer: "BRUUT!",
-      image: "images/album-madpack.jpg",
+      image: madpackImage,
+      imageALT: "Mad Pack albumcover 2015",
       buyURL: "https://bruut.bandcamp.com/album/mad-pack",
       spotifyURL: "https://open.spotify.com/album/6oy4Q1z9nvjzv0lCuHyJJA",
       deezerURL: "https://www.deezer.com/nl/album/9574630",
@@ -173,7 +182,8 @@ const albums = [
         }
       ],
       producer: "BRUUT!",
-      image: "images/album-fire.jpg",
+      image: fireImage,
+      imageALT: "Fire albumcover 2013",
       buyURL: "https://bruut.bandcamp.com/album/fire",
       spotifyURL: "https://open.spotify.com/album/4xOvYzf7dXZlrUetjDUS4i",
       deezerURL: "https://www.deezer.com/nl/album/7087177",
@@ -209,7 +219,8 @@ const albums = [
         }
       ],
       producer: "BRUUT!",
-      image: "images/album-bruut.jpg",
+      image: bruutImage,
+      imageALT: "Bruut! albumcover 2012",
       buyURL: "https://bruut.bandcamp.com/album/bruut-2",
       spotifyURL: "https://open.spotify.com/album/0AbW7sIaO5G8IIjxm1J84a",     
       deezerURL: "https://www.deezer.com/nl/album/6796215",

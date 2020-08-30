@@ -52,10 +52,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 64px;
+  width: 60px;
   height: auto;
   padding: 2rem .5rem .5rem .5rem;
-  bottom: 2.5%;
+  bottom: 1.8%;
   left: 50%;
   transform: translate(-50%);
   font-size: .9rem;
@@ -70,7 +70,7 @@
     transition: bottom .2s ease;
     &:hover {
       cursor: pointer;
-      bottom: 1.8%;
+      bottom: 1%;
     }    
   }
 }

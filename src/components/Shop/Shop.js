@@ -3,7 +3,7 @@ import allAlbums from './../../data/bruut-albums';
 import Albums from './Albums';
 import Overlay from './Overlay';
 import './Shop.scss';
-import { switchPreventScroll } from '../../utils';
+// import { switchPreventScroll } from '../../utils';
 import { fadeOnScroll } from '../../utils';
 
 function Shop() {
@@ -14,10 +14,6 @@ function Shop() {
   useEffect(() => {
     fadeOnScroll(shopSectionRef.current);
   }, [shopSectionRef]);
-
-  useEffect(() => {
-    console.log(shopSectionRef.current.className);
-  }, []);
 
   // PREVENT SCROLL ON BODY (UITZOEKEN)
   // useEffect(() => {
@@ -51,9 +47,7 @@ function Shop() {
     <section ref={shopSectionRef} className="shop" id="shop">
         <h2>Shop</h2>
         <Albums albums={allAlbums} onAlbumClick={handleAlbumClick}/>
-        {/* <button> */}
-         <a  className="visit-webshop" href="https://bruut.bandcamp.com/" target="_blank">Visit Webshop</a>
-        {/* </button> */}
+         <a  className="visit-webshop" href="https://bruut.bandcamp.com/" target="_blank" rel="noopener noreferrer">Visit Webshop</a>
     </section>
     {selectedAlbum && (
       <Overlay 

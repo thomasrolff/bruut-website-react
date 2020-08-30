@@ -1,36 +1,55 @@
 import React, { useState, useEffect, useRef} from 'react'
 import Carousel from './Carousel';
-import data from './../../data/bruut-photos';
+import allImages from './../../data/bruut-photos'; 
 import './About.scss'
 import { fadeOnScroll } from '../../utils';
-import image1 from '../../images/photo-1.jpg';
-import image2 from '../../images/photo-2.jpg';
-import image3 from '../../images/photo-3.jpg';
-import image4 from '../../images/photo-4.jpg';
-import image5 from '../../images/photo-5-large.jpg';
-import image6 from '../../images/photo-6.jpg';
-import image7 from '../../images/photo-7.jpg';
-import image8 from '../../images/photo-8.jpg';
-import image9 from '../../images/photo-9.jpg';
 
 
 function About() {
-  const [carouselVisibility, setCarouselVisibility] = useState(false);
-  const [photoIndex, setPhotoIndex] = useState(0);
+  const [selectedImageIndex, setSelectedImageIndex] = useState(null);
   const aboutRef = useRef(null);
+  const selectedImage = allImages[selectedImageIndex];
   
   useEffect(() => {
     fadeOnScroll(aboutRef.current);
   }, []);
 
   useEffect(() => {
-    if (carouselVisibility) {
+    if (selectedImage) {
       document.body.setAttribute("class", "no-scroll");
     } else {
       document.body.removeAttribute("class", "no-scroll");
     }
   });
 
+  const handleCloseButtonClick = (e) => {
+    e.stopPropagation();
+
+    setSelectedImageIndex(null);
+  }
+
+  const handlePreviousButtonClick = (e) => {
+    e.stopPropagation();
+    if (selectedImageIndex === 0) {
+      setSelectedImageIndex(allImages.length -1);
+    } else {
+      setSelectedImageIndex(selectedImageIndex - 1);
+    }
+  }
+
+  const handleNextButtonClick = (e) => {
+    e.stopPropagation();
+    if (selectedImageIndex === allImages.length -1) {
+      setSelectedImageIndex(0);
+    } else {
+      setSelectedImageIndex(selectedImageIndex + 1);
+    }
+  }
+
+  const handleImageClick = (index) => {
+    setSelectedImageIndex(index);
+  }
+  
   return (
     <>
     <section ref={aboutRef} className="about" id="about">
@@ -47,25 +66,19 @@ function About() {
           </p>
         </article>  
         <div className="photo-container" id="photo-container">
-          <img src={image1} alt="" />
-          <img src={image5} alt="" />
-          <img src={image2} alt="" />
-          <img src={image3} alt="" />
-          <img src={image4} alt="" />
-          <img src={image6} alt="" />
-          <img src={image7} alt="" />
-          <img src={image8} alt="" />
-          <img src={image9} alt="" />
+          {allImages.map((image, index) => (
+            <img key={image.id} src={image.thumbnail} onClick={() => handleImageClick(index)} alt={image.altText} />
+          ))}
         </div>
       </div>
-      <button className="more-photos" onClick={() => setCarouselVisibility(true)}>More Photos</button>
     </section>
-    {carouselVisibility && (
+    {selectedImage && (
       <Carousel   
-        setCarouselVisibility={setCarouselVisibility} 
-        photos={data} 
-        photoIndex={photoIndex}
-        setPhotoIndex={setPhotoIndex}
+        onCloseButtonClick={handleCloseButtonClick}
+        onPreviousButtonClick={handlePreviousButtonClick}
+        onNextButtonClick={handleNextButtonClick}
+        selectedImage={selectedImage}
+        allImages={allImages} 
       />
     )}
     </>

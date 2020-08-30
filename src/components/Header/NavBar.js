@@ -38,7 +38,7 @@ function NavBar({
   return (
     <nav className="navbar" style={hideOnScroll()}>
       <div className="navbar-inner-container">
-        <a href="" className="logo-container">
+        <a href="/" className="logo-container">
           <BruutLogo />
         </a>
             <ul className="nav-items">
@@ -49,10 +49,10 @@ function NavBar({
               <li className="nav-item" onClick={() => {scrollToSection('#contact', -50)}}>Contact</li>
             </ul>
             <div className="socials-container">
-              <a href="https://open.spotify.com/artist/1z5i6osuIDbkLptD9f4gjh" target="_blank"><SpotifyLogo /></a>
-              <a href="https://music.apple.com/nl/artist/bruut/468716718" target="_blank"><AppleLogo /></a>
-              <a href="https://www.instagram.com/bruutmusic/" target="_blank"><InstagramLogo /></a>
-              <a href="https://www.facebook.com/bruutofficial" target="_blank"><FacebookLogo /></a>
+              <a href="https://open.spotify.com/artist/1z5i6osuIDbkLptD9f4gjh" target="_blank" rel="noopener noreferrer"><SpotifyLogo /></a>
+              <a href="https://music.apple.com/nl/artist/bruut/468716718" target="_blank" rel="noopener noreferrer"><AppleLogo /></a>
+              <a href="https://www.instagram.com/bruutmusic/" target="_blank" rel="noopener noreferrer"><InstagramLogo /></a>
+              <a href="https://www.facebook.com/bruutofficial" target="_blank" rel="noopener noreferrer"><FacebookLogo /></a>
           </div>
           <button className="hamburger-button" onClick={() => setSideDrawer(!sideDrawer)}>
             <div className="hamburger-button__line top" />

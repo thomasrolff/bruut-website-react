@@ -3,7 +3,7 @@ import React from 'react';
 function Album({ album, onClick }) {
   return (
     <div className="album" onClick={onClick}>
-      <img src={album.image}></img>
+      <img src={album.image} alt={album.imageALT}></img>
       <div className="overlay" />
       <div className="caption">
         <h3 className="album-title">{album.title}</h3>

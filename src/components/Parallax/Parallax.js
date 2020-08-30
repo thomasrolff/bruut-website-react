@@ -9,7 +9,7 @@ function Parallax() {
       objectFit: "contain",
       backgroundPosition: "center",
       backgroundRepeat: "no-repeat",
-      backgroundSize: "cover",
+      backgroundSize: "cover"
     }}/>
   )
 }

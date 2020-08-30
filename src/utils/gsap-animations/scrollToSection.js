@@ -3,9 +3,9 @@ import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 gsap.registerPlugin(ScrollToPlugin);
 
 
-export function scrollToSection (section, margin) {
+export function scrollToSection (section, margin, duration = 1) {
   gsap.to(window, {
-    duration: 1,
+    duration,
     scrollTo: {
       y: section,
       offsetY: margin,

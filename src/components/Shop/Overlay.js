@@ -24,7 +24,7 @@ export default function Overlay({
       </div>
         <div className="content-wrapper">
           <div className="image-container">
-            <img src={selectedAlbum.image} />
+            <img src={selectedAlbum.image} alt={selectedAlbum.imageALT}/>
           </div>
           <div className="info-container">
             <h2>{selectedAlbum.title}</h2>
@@ -39,7 +39,7 @@ export default function Overlay({
             <p className="produced">Produced by {selectedAlbum.producer}</p>
             <p className="available">Available on: {selectedAlbum.availability.join(" | ")}</p>
             <div className="buttons-container">
-              <a href={selectedAlbum.buyURL} target="_blank" className="button-buy" >
+              <a href={selectedAlbum.buyURL} target="_blank" rel="noopener noreferrer" className="button-buy" >
                 <span className="button-image">
                   <ShoppingSvg />
                 </span>

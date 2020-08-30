@@ -39,10 +39,6 @@ useEffect(() => {
       window.removeEventListener('scroll', watchScrollPosition);
     }
   }, [breakpointReached, setBreakpointReached]);
- 
-  const setViewport = () => {
-    window.innerWidth += 200;
-  }
 
   const scrollPosition = () => {
     gsap.to(window, {

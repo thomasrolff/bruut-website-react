@@ -13,10 +13,10 @@ export default function StreamModal({ album, setSelectedStream }) {
           </svg>
         </div>
         <ul>
-          <li><a href={album.spotifyURL} target="_blank">Spotify</a></li>
-          <li><a href={album.appleMusicURL} target="_blank">Apple Music</a></li>
-          <li><a href={album.deezerURL} target="_blank">Deezer</a></li>
-          <li><a href={album.tidalURL} target="_blank">Tidal</a></li>
+          <li><a href={album.spotifyURL} target="_blank" rel="noopener noreferrer">Spotify</a></li>
+          <li><a href={album.appleMusicURL} target="_blank" rel="noopener noreferrer">Apple Music</a></li>
+          <li><a href={album.deezerURL} target="_blank" rel="noopener noreferrer">Deezer</a></li>
+          <li><a href={album.tidalURL} target="_blank" rel="noopener noreferrer">Tidal</a></li>
         </ul>
       </div>
     </>
