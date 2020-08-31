@@ -9,13 +9,15 @@ function Shows() {
   const [eventsVisible, setEventsVisible] = useState(6);
   const [displayError, setDisplayError] = useState(false);
   const showsRef = useRef(null);
+
+  const API_KEY = process.env.REACT_APP_SONGKICK_API_KEY;
   
   useEffect(() => {
     fadeOnScroll(showsRef.current);
   }, []);
 
   useEffect(() => {
-    fetch('https://api.songkick.com/api/3.0/artists/4057396/calendar.json?apikey=42PV2kn4gScjFMcv')
+    fetch(`https://api.songkick.com/api/3.0/artists/4057396/calendar.json?apikey=${API_KEY}`)
     .then(response => response.json())
     .then(buildAllEvents)
     .catch(error => {
@@ -90,7 +92,7 @@ function Shows() {
       </div>
       {displayError && 
         <h3 style={{textAlign: "center", padding: "1rem 0"}}>
-          Not able to load the data at this moment.
+          Unable to load the data at this moment.
         </h3> 
       }
       {eventsVisible < artistEvents.length ? 
