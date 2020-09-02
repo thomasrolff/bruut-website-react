@@ -1,6 +1,9 @@
 @import '../../global-styles/colors';
 
 .side-drawer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 100vh;
   background: $main-black;
   position: fixed;
@@ -25,24 +28,20 @@
 .side-drawer ul {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: 100%;
+  justify-content: space-between;
+  height: 65%;
   list-style: none;
   font-size: 1.5rem;
+  padding: 0 2rem;
 }
 
 
 .side-drawer li {
-  height: 2rem;
-  width: fit-content;
   vertical-align: center;
   font-family: 'Open Sans', futura, sans-serif;
   text-decoration: none;
   font-weight: 800;
-  // text-transform: uppercase;
   color: white;
-  // transition: all .15s;
-  margin: 1rem 0;
   span {
     padding-bottom: .2rem;
   }
@@ -55,5 +54,40 @@
   } 
 }
 
+.line-divider {
+  height: 5px;
+  width: 100%;
+  background: white;
+}
 
-   
+.side-drawer-socials-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  a {
+    // background: red;
+    padding: 0 .5rem .5rem .5rem;
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
+
+// Media Queries
+
+// Mobile Landscape
+@media screen and (max-width: 896px) and (max-height: 414px) and (orientation: landscape) {
+  .side-drawer ul {
+    height: 88%;
+  }
+}
+
+// Tablet Portrait
+@media screen and (min-width: 768px) and (orientation: portrait) {
+  .side-drawer ul {
+    height: 40%;
+  }
+}  

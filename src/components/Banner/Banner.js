@@ -46,8 +46,8 @@ function Banner() {
       <div className="banner-text-wrapper">
         <img  ref={title} className="go-surfing-logo" src={GoSurfingLogo} alt="Go Surfing logo" />
         <p className="quote">
-          <span>"Go Surfing is the best surf-album in the world today."</span>
-          <span>- New York Times</span>
+          <span>"Een van de leukste platen van het jaar."</span>
+          <span className="bron">- Het Parool</span>
         </p>
         <p className="footnote">Available on 12" white vinyl, cd & digital</p>
         <div className="buttons-wrapper">

@@ -8,10 +8,8 @@
   padding-top: 4rem;
   padding-bottom: 6rem;
   h2 {
-    // font-family: futura, 'Open Sans', sans-serif;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    // text-transform: capitalize;
   }
   .bookings,
   .label,
@@ -28,7 +26,7 @@
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 896px) {
   .contact {
     display: flex;
     flex-direction: column;
@@ -49,5 +47,15 @@
   .label,
   .management {
     min-width: 235px;
+  }
+}
+
+@media screen and (max-width: 896px) and (max-height: 414px) and (orientation: landscape) {
+  .contact {
+    -webkit-text-size-adjust: 100%; 
+    padding-left: 3rem;
+    h2 {
+      margin-bottom: 1.5rem;
+    }
   }
 }

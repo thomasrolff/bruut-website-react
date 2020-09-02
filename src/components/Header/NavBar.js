@@ -53,7 +53,7 @@ function NavBar({
               <a href="https://music.apple.com/nl/artist/bruut/468716718" target="_blank" rel="noopener noreferrer"><AppleLogo /></a>
               <a href="https://www.instagram.com/bruutmusic/" target="_blank" rel="noopener noreferrer"><InstagramLogo /></a>
               <a href="https://www.facebook.com/bruutofficial" target="_blank" rel="noopener noreferrer"><FacebookLogo /></a>
-          </div>
+            </div>
           <button className="hamburger-button" onClick={() => setSideDrawer(!sideDrawer)}>
             <div className="hamburger-button__line top" />
             <div className="hamburger-button__line bottom" />

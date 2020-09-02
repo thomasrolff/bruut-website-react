@@ -4,22 +4,11 @@
   box-sizing: border-box;
   margin: 0;
 }
-
-// prevent bouncy scroll
-// html {
-//   height: 100%;
-//   width: 100%;
-//   overflow: hidden; 
-// } 
-
-// html {
-//   overflow-x: hidden;
-// }
  
 body {
   background-color: $main-black;
   color: $main-black;
-  // overflow-x: hidden;
+  overflow-x: hidden;
   font-family: futura, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
     "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;

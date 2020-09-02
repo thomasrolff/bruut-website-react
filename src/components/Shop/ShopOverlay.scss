@@ -37,34 +37,10 @@
 
 .left-bar-wrapper {
   display: none;
-  padding: 8rem 3rem;
-  padding-right: 4rem;
-  svg path {
-    fill: #5a5959;
-    transition: all .2s linear;
-  }
-  &:hover {
-    cursor: pointer;
-    svg path {
-        fill: white;
-    }
-  }
 }
 
 .right-bar-wrapper {
   display: none;
-  padding: 8rem 3rem;
-  padding-left: 4rem;
-  svg path {
-    fill: #5a5959;
-    transition: all .2s linear;
-  }
-  &:hover {
-    cursor: pointer;
-    svg path {
-        fill: white;
-    }
-  }
 }
   
 .content-wrapper {
@@ -169,16 +145,96 @@
     padding: 8rem 0;
     padding-right: 4rem;
     padding-left: 1rem;
+    svg path {
+      fill: white;
+    }
   }
   .right-bar-wrapper {
     display: block;
     padding: 8rem 0;
     padding-right: 1rem;
     padding-left: 4rem;
+    svg path {
+      fill: white;
+    }
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (max-width: 896px) and (orientation: landscape) {
+  .content-wrapper {
+    flex-direction: row;
+    justify-content: center;
+    .image-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      height: 100%;
+      max-height: 480px;
+      margin: 0;
+      img {
+        width: 85%;
+      }
+    }
+    .info-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      max-width: 50%;
+      h2 {
+        margin: 0;
+      }
+      .musicians {
+        order: 2;
+        // display: block;
+      }
+      .produced,
+      .available {
+        order: 3;
+      }
+      .buttons-container {
+        order: 1;
+        flex-direction: row;
+        margin: 2rem 0;
+        .button-stream,
+        .button-buy {
+          margin: 0;
+          max-width: 200px;
+          min-height: 40px;
+          font-size: 1rem;
+          background: white;
+          color: black;
+          svg path {
+            fill: black;
+          }
+          &:hover {
+            background: transparent;
+            color: white;
+            svg path {
+              fill: white;
+            }
+          }
+        }
+        .button-buy {
+          margin-right: .5rem;
+        }
+      }
+    }
+  }
+  .left-bar-wrapper {
+    display: block;
+    padding: 2rem 0;
+    padding-right: 1rem; 
+  }
+  .right-bar-wrapper {
+    display: block;
+    padding: 2rem 0;
+    padding-left: 1rem; 
+  }
+}
+
+@media screen and (min-width: 897px) {
   .content-wrapper {
     flex-direction: row;
     justify-content: center;
@@ -236,6 +292,34 @@
         .button-buy {
           margin-right: 1rem;
         }
+      }
+    }
+  }
+  .left-bar-wrapper {
+    padding: 8rem 3rem;
+    padding-right: 4rem;
+    svg path {
+      fill: #5a5959;
+      transition: all .2s linear;
+    }
+    &:hover {
+      cursor: pointer;
+      svg path {
+          fill: white;
+      }
+    }
+  }
+  .right-bar-wrapper {
+    padding: 8rem 3rem;
+    padding-left: 4rem;
+    svg path {
+      fill: #5a5959;
+      transition: all .2s linear;
+    }
+    &:hover {
+      cursor: pointer;
+      svg path {
+          fill: white;
       }
     }
   }

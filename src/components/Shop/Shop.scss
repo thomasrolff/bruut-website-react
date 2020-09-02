@@ -11,18 +11,13 @@
 
 .albums-container {
   display: flex;
-  overflow-y: hidden;
-  overflow-x: scroll;
   width: 100%;
   max-width: $global-max-width;
   padding-left: 15vw;
   margin-bottom: 3rem;
-
-  // test: 
-  // background: #020202;
-  // padding: .8rem .5rem;
-  // einde test 
-
+  overflow-y: hidden;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
   &::-webkit-scrollbar {
     display: none;
   }
@@ -37,7 +32,6 @@
       width: 70vw;
     }
     .caption {
-      // color: white;
       .album-info-sub {
         display: none;
       }
@@ -74,7 +68,7 @@
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 897px) {
   .shop {
     display: flex;
     flex-direction: column;
@@ -152,5 +146,28 @@
         padding: 0;
       }
     }
+  }
+}
+
+@media screen and (max-width: 896px) and (max-height: 414px) and (orientation: landscape) {
+  .albums-container {
+    .album {
+      max-height: 300px;
+      .overlay {
+        display: none;
+      }
+      img {
+        object-fit: contain;
+        width: 27vw;
+      }
+      .caption {
+        .album-info-sub {
+          display: none;
+        }
+      }
+    }
+  }
+  .visit-webshop {
+    font-size: 1rem;
   }
 }

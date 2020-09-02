@@ -6,9 +6,8 @@
   flex-direction: column;
   align-items: center;
   background: $background;
-  padding-top: 1rem;
+  padding-top: .5rem;
   margin-top: 3rem;
-  margin-bottom: 3rem;
   .about-content-wrapper {
     display: flex;
     flex-direction: column;
@@ -29,19 +28,20 @@
 // Scollable photo carousel 
 .photo-container {
   display: flex;
-  overflow-y: hidden;
-  overflow-x: scroll;
   height: 100%;
   width: 100%;
   background: black;
-  padding: 1rem 0;
+  padding: .6rem 0;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
   &::-webkit-scrollbar {
     display: none;
   }
   img {
     object-fit: contain;
     margin-right: .6rem;
-    max-height: 156px;
+    max-height: 168px;
   }
 }
 
@@ -52,7 +52,7 @@ button.more-photos {
 }
 
 // Media Queries
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 897px) {
   .about {
     margin-top: 0;
     .about-content-wrapper {
@@ -112,5 +112,14 @@ button.more-photos {
         }
       } 
     }
+  }
+}
+
+@media screen and (max-width: 896px) and (max-height: 414px) and (orientation: landscape) {
+  .about-article {
+    margin: 0 3rem;
+    margin-bottom: 3rem;
+    font-size: 1rem;
+    -webkit-text-size-adjust: 100%;
   }
 }

@@ -117,6 +117,57 @@
   }
 }  
 
+
+// Media Queries
+@media screen and (max-width: 896px) and (max-height: 414px) and (orientation: landscape) {
+  .banner {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+  }
+  .banner-text-wrapper {
+    height: 100%;
+    margin-left: 1rem;
+    .go-surfing-logo {
+      display: block;
+      width: 100%;
+    }
+    .quote {
+      display: block;
+      line-height: 1.65;
+      margin-top: 1rem;
+      span {
+        display: block;
+        font-size: 1rem;
+        font-style: italic;
+      }
+      .bron {
+        font-style: normal;
+      }
+    }
+    .footnote {
+      order: 3;
+      // margin-top: 1rem;
+    }
+    .buttons-wrapper {
+      margin-top: 0;
+      flex-direction: row;
+      .banner-button {
+        max-width: 200px;
+        min-height: 40px;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.08);
+        &:first-child {
+          margin-right: .5rem;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 480px) {
   .banner-image,
   .banner-text-wrapper {
@@ -124,7 +175,7 @@
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .banner {
     flex-direction: row;
     justify-content: center;
@@ -145,7 +196,11 @@
       margin: 1rem 0;
       span {
         display: block;
+        font-size: 1.1rem;
         font-style: italic;
+      }
+      .bron {
+        font-style: normal;
       }
     }
     .footnote {

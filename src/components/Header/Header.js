@@ -16,7 +16,6 @@ function Header() {
   const [sideDrawer, setSideDrawer] = useState(false);
   const [breakpointReached, setBreakpointReached] = useState(false);
   const [initialViewportHeight, setInitialViewportheight] = useState(null);  
-  // const [hamburgerIsVisible, setHamburgerIsVisible] = useState(true);
 
   useEffect(() => {
     setInitialViewportheight(window.innerHeight);
@@ -24,7 +23,7 @@ function Header() {
 
   const setHeaderHeight = () => {
     return {
-      height: window.innerWidth > 768 ? '100vh' : `${initialViewportHeight}px`
+      height: window.innerWidth > 480 ? '100vh' : `${initialViewportHeight}px`
     }
   }
 
@@ -57,13 +56,6 @@ useEffect(() => {
         setSideDrawer={setSideDrawer} 
         sideDrawer={sideDrawer}
       />
-      {/* {hamburgerIsVisible && 
-        <div className="hamburger" onClick={() => setSideDrawer(!sideDrawer)}>
-          <div className="line"></div>
-          <div className="line"></div>
-          <div className="line"></div>
-        </div>
-      } */}
       <SideDrawer sideDrawer={sideDrawer} setSideDrawer={setSideDrawer} />
       {sideDrawer && <Backdrop setSideDrawer={setSideDrawer} />}
       <VideoLanding />

@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { fadeOnScroll, scrollToSection } from '../../utils';
 import './News.scss';
-import antonImage from '../../images/Anton-Goudsmit.png';
 
 function News() {
   const [news, setNews] = useState(false);
@@ -22,7 +21,7 @@ function News() {
       
       {news && (
         <>
-        <h2 >News</h2>
+        <h2>News</h2>
         <div className="news-wrapper">
           <div className="news-feed"> 
             {/* Example feed 1 */}

@@ -83,7 +83,7 @@ const albums = [
         "CD",
         "DIGITAL",
       ],
-      info: "2017 | vinyl, cd, digital"
+      info: "2018 | vinyl, cd, digital"
   },
   {
       id: 2,

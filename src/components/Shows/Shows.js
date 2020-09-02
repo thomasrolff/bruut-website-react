@@ -24,7 +24,7 @@ function Shows() {
       console.log(error);
       setDisplayError(true);
     });
-  }, []);
+  }, [API_KEY]);
 
   const buildAllEvents = (data) => {
     const allOkSongkickEvents = data.resultsPage.results.event.filter(event => event.status === "ok");
