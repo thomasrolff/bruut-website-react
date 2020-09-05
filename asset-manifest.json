@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "./static/css/main.ba16d28c.chunk.css",
+    "main.css": "./static/css/main.44c02277.chunk.css",
     "main.js": "./static/js/main.9dddb0e8.chunk.js",
     "main.js.map": "./static/js/main.9dddb0e8.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.2c7934b7.js",
@@ -8,9 +8,9 @@
     "static/js/2.3ecb8b2e.chunk.js": "./static/js/2.3ecb8b2e.chunk.js",
     "static/js/2.3ecb8b2e.chunk.js.map": "./static/js/2.3ecb8b2e.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.93f9d056285610e6406cda28de92bd73.js": "./precache-manifest.93f9d056285610e6406cda28de92bd73.js",
+    "precache-manifest.b70ee85255b214eb37f39e4b08678f4e.js": "./precache-manifest.b70ee85255b214eb37f39e4b08678f4e.js",
     "service-worker.js": "./service-worker.js",
-    "static/css/main.ba16d28c.chunk.css.map": "./static/css/main.ba16d28c.chunk.css.map",
+    "static/css/main.44c02277.chunk.css.map": "./static/css/main.44c02277.chunk.css.map",
     "static/js/2.3ecb8b2e.chunk.js.LICENSE.txt": "./static/js/2.3ecb8b2e.chunk.js.LICENSE.txt",
     "static/media/2014_poland.jpg": "./static/media/2014_poland.c18de681.jpg",
     "static/media/2016_nagasaki.jpg": "./static/media/2016_nagasaki.81c7fb75.jpg",
@@ -71,7 +71,7 @@
   "entrypoints": [
     "static/js/runtime-main.2c7934b7.js",
     "static/js/2.3ecb8b2e.chunk.js",
-    "static/css/main.ba16d28c.chunk.css",
+    "static/css/main.44c02277.chunk.css",
     "static/js/main.9dddb0e8.chunk.js"
   ]
 }
