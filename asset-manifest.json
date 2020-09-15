@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "./static/css/main.44c02277.chunk.css",
-    "main.js": "./static/js/main.9dddb0e8.chunk.js",
-    "main.js.map": "./static/js/main.9dddb0e8.chunk.js.map",
+    "main.css": "./static/css/main.abac4c20.chunk.css",
+    "main.js": "./static/js/main.1055b189.chunk.js",
+    "main.js.map": "./static/js/main.1055b189.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.2c7934b7.js",
     "runtime-main.js.map": "./static/js/runtime-main.2c7934b7.js.map",
-    "static/js/2.3ecb8b2e.chunk.js": "./static/js/2.3ecb8b2e.chunk.js",
-    "static/js/2.3ecb8b2e.chunk.js.map": "./static/js/2.3ecb8b2e.chunk.js.map",
+    "static/js/2.c2015eb3.chunk.js": "./static/js/2.c2015eb3.chunk.js",
+    "static/js/2.c2015eb3.chunk.js.map": "./static/js/2.c2015eb3.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.b70ee85255b214eb37f39e4b08678f4e.js": "./precache-manifest.b70ee85255b214eb37f39e4b08678f4e.js",
+    "precache-manifest.269848ab398e24dff577cc35575253b1.js": "./precache-manifest.269848ab398e24dff577cc35575253b1.js",
     "service-worker.js": "./service-worker.js",
-    "static/css/main.44c02277.chunk.css.map": "./static/css/main.44c02277.chunk.css.map",
-    "static/js/2.3ecb8b2e.chunk.js.LICENSE.txt": "./static/js/2.3ecb8b2e.chunk.js.LICENSE.txt",
+    "static/css/main.abac4c20.chunk.css.map": "./static/css/main.abac4c20.chunk.css.map",
+    "static/js/2.c2015eb3.chunk.js.LICENSE.txt": "./static/js/2.c2015eb3.chunk.js.LICENSE.txt",
     "static/media/2014_poland.jpg": "./static/media/2014_poland.c18de681.jpg",
     "static/media/2016_nagasaki.jpg": "./static/media/2016_nagasaki.81c7fb75.jpg",
     "static/media/album-bruut.jpg": "./static/media/album-bruut.29b6362f.jpg",
@@ -45,8 +45,8 @@
     "static/media/nagasaki-thumb.jpg": "./static/media/nagasaki-thumb.022fcedb.jpg",
     "static/media/parallax-black-overlay-S.jpg": "./static/media/parallax-black-overlay-S.7701949c.jpg",
     "static/media/parallax-black-overlay.jpg": "./static/media/parallax-black-overlay.6b88e708.jpg",
-    "static/media/patronaat-L.jpg": "./static/media/patronaat-L.f712a0bc.jpg",
-    "static/media/patronaat-S.jpg": "./static/media/patronaat-S.5a3b3988.jpg",
+    "static/media/patronaat-L.jpg": "./static/media/patronaat-L.cfaf682c.jpg",
+    "static/media/patronaat-S.jpg": "./static/media/patronaat-S.01b36e3f.jpg",
     "static/media/patronaat-thumb.jpg": "./static/media/patronaat-thumb.ab5d7f10.jpg",
     "static/media/poland-thumb.jpg": "./static/media/poland-thumb.812d5801.jpg",
     "static/media/press-anton-thumb.jpg": "./static/media/press-anton-thumb.f0d8e68d.jpg",
@@ -70,8 +70,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.2c7934b7.js",
-    "static/js/2.3ecb8b2e.chunk.js",
-    "static/css/main.44c02277.chunk.css",
-    "static/js/main.9dddb0e8.chunk.js"
+    "static/js/2.c2015eb3.chunk.js",
+    "static/css/main.abac4c20.chunk.css",
+    "static/js/main.1055b189.chunk.js"
   ]
 }
